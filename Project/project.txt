@@ -1,0 +1,335 @@
+<section class="category-container">
+        <div class="category-item">
+            <img src="sameday.png" alt="Same Day">
+            <p>Same Day Delivery</p>
+        </div>
+        <div class="category-item">
+            <img src="birthday.png" alt="Birthday">
+            <p>Birthday</p>
+        </div>
+        <div class="category-item">
+            <img src="anniversary.png" alt="Anniversary">
+            <p>Anniversary</p>
+        </div>
+        <div class="category-item">
+            <img src="newarrivals.png" alt="New Arrivals">
+            <p>New Arrivals</p>
+        </div>
+        <div class="category-item">
+            <img src="bestsellers.png" alt="Bestsellers">
+            <p>Bestsellers</p>
+        </div>
+        <div class="category-item">
+            <img src="hampers.png" alt="Hampers">
+            <p>Hampers</p>
+        </div>
+        <div class="category-item">
+            <img src="international.png" alt="International">
+            <p>International</p>
+        </div>
+        <div class="category-item">
+            <img src="luxearrangements.png" alt="Lux Arrangements">
+            <p>Lux Arrangements</p>
+        </div>
+
+    </section>
+
+
+
+h1{
+    color: hsl(332, 34%, 63%);
+    text-align: left;
+    font-style: italic;
+    font-size: 1cm;
+    border: 12px palevioletred outset ;
+    background-color:rgb(212, 159, 227) ;
+}
+
+
+
+
+<section class="category-container">
+        <div class="category-item">
+            <img src="sameday.png" alt="Same Day">
+            <p>Same Day Delivery</p>
+            <img src="birthday.png" alt="Birthday">
+            <p>Birthday</p>
+            <img src="anniversary.png" alt="Anniversary">
+            <p>Anniversary</p>
+            <img src="newarrivals.png" alt="New Arrivals">
+            <p>New Arrivals</p>
+            <img src="bestsellers.png" alt="Bestsellers">
+            <p>Bestsellers</p>
+            <img src="hampers.png" alt="Hampers">
+            <p>Hampers</p>
+            <img src="international.png" alt="International">
+            <p>International</p>
+            <img src="luxearrangements.png" alt="Lux Arrangements">
+            <p>Lux Arrangements</p>
+        </div>
+
+    </section>
+
+
+
+
+.shopping-cart{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    border: 2px solid black;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.shopping-cart::before{
+    content: "";
+    width: 30px;
+    height: 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+    position: absolute;
+    top: -10px;
+    left: 5px;
+    background: transparent;
+}
+.wheel1{
+    left: 5px;
+}
+.wheel2{
+    right: 5px;
+}
+
+
+
+
+.floral{
+    display:flex;
+    align-items: center;
+    min-height: 1vh;
+    align-content: center;
+    margin-left: 70px;
+
+}
+.bs{
+    margin-top: 850px;
+    padding-top: 20px;
+    position: absolute;
+    font-size: 25px;
+    font-family:'Times New Roman', Times, serif ;
+    font-weight: bolder;
+}
+.f,.bs{
+    font-size: 25px;
+    font-family:'Times New Roman', Times, serif ;
+    font-weight: bolder;
+    
+    font-size: 15px;
+    color: #776e6e;
+    padding: 20px;
+    background-color: white;
+    border-radius: 25px;
+}
+
+
+
+
+
+
+
+
+
+.slide{
+    display:flex;
+    align-items: center;
+    min-height: 2vh;
+    align-content: center;
+    margin-left: 0px;
+}
+#slideshow {
+    overflow:hidden;
+    height: 571px;
+    width: 1600px;
+    margin: 0 auto;
+    margin-left: 0px;
+}
+
+
+.slide {
+    float: left;
+    height: 571px;
+    width: 1600px;
+}
+.slide-wrapper {
+    width: calc(1600px * 5);
+    animation: slide 15s ease infinite;
+}
+
+@keyframes slide {
+
+    20% {
+        margin-left: 0px;
+    }
+
+    40%{
+        margin-left: calc(-1600px * 1);
+    }
+    60% {
+        margin-left: calc(-1600px * 2);
+    }
+    80% {
+        margin-left: calc(-1600px * 3);
+    }
+
+    100% {
+        margin-left: calc(-1600px * 4);
+    }
+
+    
+}
+
+
+
+
+@media (max-width: 668px) {
+    .slideshow {
+        overflow-x: auto;
+        white-space: nowrap;
+        display: flex;
+        flex-wrap: nowrap;
+        padding: 10px;
+    }
+    .slide-wrapper {
+        flex: 0 0 auto;
+        margin-right: 15px;
+    }
+}
+
+
+
+
+
+
+
+<section class="slide">
+          <div id="slideshow">
+               <div class="slide-wrapper">
+                    <div class="slide">
+                       <img src="s1.png" alt="" srcset="">
+                   </div>
+                   <div class="slide">
+                       <img src="s2.png" alt="">
+                   </div>
+                   <div class="slide">
+                       <img src="s3.png" alt="">
+                   </div>
+                   <div class="slide">
+                       <img src="s4.png" alt="">
+                   </div>
+                   <div class="slide">
+                       <img src="s5.png" alt="">
+                   </div>
+                   
+               </div>
+           
+        </div>
+
+    </section>
+
+
+
+@media (max-width: 868px) {
+    .category-menu {
+        overflow-x: auto;
+        white-space: nowrap;
+        display: flex;
+        flex-wrap: nowrap;
+        padding: 10px;
+    }
+    .category-item {
+        flex: 0 0 auto;
+        margin-right: 15px;
+    }
+}
+@media (max-width: 668px) {
+    .slide-wrapper {
+        overflow-x: auto;
+        white-space: nowrap;
+        display: flex;
+        flex-wrap: nowrap;
+        padding: 10px;
+    }
+    .slide {
+        flex: 0 0 auto;
+        margin-right: 15px;
+    }
+}
+@media (max-width: 668px) {
+    .menu {
+        overflow-x: auto;
+        white-space: nowrap;
+        display: flex;
+        flex-wrap: nowrap;
+        padding: 10px;
+    }
+    .item {
+        flex: 0 0 auto;
+        margin-right: 15px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:991px){
+    html{
+       
+        font-size: 55%;
+        
+    }
+    header{
+
+        padding: 2rem;
+    }
+}
+
+
+

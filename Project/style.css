@@ -1,0 +1,103 @@
+body{
+    font-family: Arial,sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(252, 220, 238);
+    background-image: url(https://marketplace.canva.com/EAFCJwAA-pQ/1/0/1600w/canva-pink-floral-linktree-background-HDiSU9e_67s.jpg) ;
+    background-repeat:no-repeat ;
+    background-position: center ;
+    background-size:auto;
+    background-attachment: fixed ;
+    
+    
+}
+
+nav{
+    width: 1800px;
+  
+    display: flex;
+    justify-content: space-between;
+    border: 1cm palevioletred;
+    background: white;
+    color:white;
+    padding: 15px 10px;
+}
+.category {
+    font-style: bold;
+    font-size: medium;
+    color: blueviolet;
+    border: 12px #e98ac0 ;
+    background-color: #f2c4d4;
+    
+
+}
+.banner {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow:hidden;
+
+}
+.slider{
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+.slide {
+    width: 100%;
+    height: 300px;
+    display: none;
+}
+.active{
+    display: block;
+
+}
+.prev, .next{
+    position: absolute;
+    top: 50%;
+    transform: translateY();
+    background: rgba(0,0, 0, 0,5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+.prev{left: 10px;}
+.next{right: 10px;}
+
+.categories-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; 
+    padding: 15px;
+    border: 2px solid pink; 
+    border-radius: 10px; 
+    width: fit-content; 
+    background-color: white;
+    margin: auto; 
+
+}
+.category-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    min-width: 100px;
+}
+
+
+.category-item img {
+    width: 50px; 
+    height: auto;
+}
+
+
+.category-item p {
+    font-size: 14px;
+    color: black;
+    margin-top: 5px;
+    white-space: nowrap;
+}
+
